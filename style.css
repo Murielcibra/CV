@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  margin: 0px;
+}
+
+h2,
+h3 {
+  color: rgb(105, 105, 105);
+  font-family: "Inter";
+}
+
+.header {
+  text-align: center;
+  padding: 15px;
+  background-color: #678892;
+  color: whitesmoke;
+}
+.header.navigation {
+  text-align: right;
+  padding: 48px 16px;
+}
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
