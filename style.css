@@ -22,8 +22,38 @@ h3 {
   text-align: right;
   padding: 48px 16px;
 }
+.nav-link {
+  padding: 4px 8px;
+  color: white;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+.nav-link:active {
+  color: black;
+  background-color: lightgrey;
+}
+.nav-link + .nav-link {
+  margin-left: 16px;
+}
 .main {
   max-width: 800px;
   margin: 0 auto;
   padding: 16px;
+}
+.main > * + * {
+  margin-top: 48px;
+}
+
+.main > * {
+  border-top: 2px solid grey;
+}
+
+.main > *:first-child {
+  border-top: none;
+}
+.profile {
+  border-top: none;
 }
