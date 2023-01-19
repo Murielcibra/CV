@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto";
+}
+html {
+  font-family: "roboto";
 }
 body {
   margin: 0px;
@@ -10,6 +12,9 @@ h2,
 h3 {
   color: rgb(105, 105, 105);
   font-family: "Inter";
+}
+.header > p::after {
+  content: "🦸‍♀️";
 }
 
 .header {
@@ -48,7 +53,7 @@ h3 {
 }
 
 .main > * {
-  border-top: 2px solid grey;
+  border-top: 2px solid #678892;
 }
 
 .main > *:first-child {
@@ -56,4 +61,9 @@ h3 {
 }
 .profile {
   border-top: none;
+}
+
+.experience-heading,
+.experience-subheading {
+  display: inline-block;
 }
