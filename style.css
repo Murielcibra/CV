@@ -22,17 +22,47 @@ h3 {
 }
 .hire-me {
   position: absolute;
-  right: 1rem;
-  top: 2.3rem;
+  flex-flow: column wrap;
+  right: 2rem;
+  top: 2.5rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
   background: #fcb10d;
   color: black;
+  font-weight: 600;
+  font-size: 1.5em;
+  display: flex;
 }
 
 .hire-me:hover {
   color: #fcb10d;
   background-color: black;
+}
+@media screen and (min-width: 992px) {
+  .hire-me {
+    position: fixed;
+  }
+}
+
+@media print {
+  .hire-me {
+    display: none;
+  }
+}
+.navigation {
+  display: none;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: right;
+  }
 }
 .iam {
   font-size: 1.25em;
@@ -48,12 +78,16 @@ h3 {
 }
 .header.navigation {
   text-align: right;
-  padding: 3rem 1rem;;
+  padding: 3rem 1rem;
 }
 .nav-link {
   padding: 0.25rem 0.5rem;
   color: white;
   text-decoration: none;
+}
+
+.nav-link.contact {
+  margin-right: 10rem;
 }
 .nav-link:hover {
   color: black;
@@ -89,4 +123,10 @@ h3 {
 .experience-heading,
 .experience-subheading {
   display: inline-block;
+}
+.experience-subheading {
+  margin-left: 60px;
+}
+.experience-subheading.sub {
+  margin-left: 200px;
 }
